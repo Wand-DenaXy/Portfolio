@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" rx="48" fill="#0B0F17"/>
+  <defs>
+    <linearGradient id="g" x1="140" y1="120" x2="1060" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0B67F"/>
+      <stop offset="0.5" stop-color="#7C8CFF"/>
+      <stop offset="1" stop-color="#2DE2E6"/>
+    </linearGradient>
+  </defs>
+  <rect x="84" y="92" width="164" height="34" rx="17" fill="#141B29"/>
+  <rect x="84" y="144" width="292" height="18" rx="9" fill="#1B2435"/>
+  <rect x="84" y="176" width="248" height="18" rx="9" fill="#1B2435"/>
+  <path d="M120 616H1084" stroke="#1B2435" stroke-width="2"/>
+  <path d="M180 536C276 438 382 384 496 374C618 364 720 400 824 468C936 542 1014 588 1096 596" stroke="url(#g)" stroke-width="12" stroke-linecap="round" stroke-dasharray="0 30"/>
+  <text x="84" y="388" fill="#F4F7FB" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="700">Em Breve</text>
+  <text x="84" y="468" fill="#AAB6D3" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="400">API REST · Flutter · FastAPI · next iteration</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" rx="48" fill="#0B0F17"/>
+  <defs>
+    <linearGradient id="g" x1="120" y1="80" x2="1080" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C8CFF"/>
+      <stop offset="0.5" stop-color="#9B5CFF"/>
+      <stop offset="1" stop-color="#2DE2E6"/>
+    </linearGradient>
+    <radialGradient id="r" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 180) rotate(38) scale(430 320)">
+      <stop stop-color="#7C8CFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7C8CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="280" cy="180" r="260" fill="url(#r)"/>
+  <path d="M140 584C242 466 360 416 496 430C612 442 712 516 840 500C950 486 1042 410 1110 306" stroke="url(#g)" stroke-width="12" stroke-linecap="round" stroke-dasharray="0 28"/>
+  <rect x="84" y="88" width="180" height="36" rx="18" fill="#101728"/>
+  <rect x="84" y="138" width="300" height="18" rx="9" fill="#1A2336"/>
+  <rect x="84" y="170" width="240" height="18" rx="9" fill="#1A2336"/>
+  <rect x="84" y="610" width="1032" height="104" rx="28" fill="#101728" stroke="#22304A"/>
+  <text x="84" y="390" fill="#F4F7FB" font-family="Inter, Arial, sans-serif" font-size="88" font-weight="700">Federação</text>
+  <text x="84" y="468" fill="#AAB6D3" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="400">ControllerBase architecture · modular CRUD · clean inheritance</text>
+</svg>

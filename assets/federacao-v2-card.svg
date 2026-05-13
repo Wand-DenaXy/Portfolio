@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" rx="48" fill="#0A1018"/>
+  <defs>
+    <linearGradient id="g" x1="120" y1="120" x2="1080" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DE2E6"/>
+      <stop offset="0.45" stop-color="#7C8CFF"/>
+      <stop offset="1" stop-color="#7AF0B7"/>
+    </linearGradient>
+  </defs>
+  <rect x="84" y="92" width="220" height="34" rx="17" fill="#111B2E"/>
+  <rect x="84" y="140" width="340" height="18" rx="9" fill="#1A243B"/>
+  <rect x="84" y="172" width="290" height="18" rx="9" fill="#1A243B"/>
+  <path d="M152 594H1040" stroke="#1C2740" stroke-width="2"/>
+  <circle cx="292" cy="326" r="150" stroke="url(#g)" stroke-width="18" stroke-linecap="round" stroke-dasharray="420 120"/>
+  <circle cx="724" cy="334" r="210" stroke="url(#g)" stroke-width="10" opacity="0.3"/>
+  <path d="M456 566C552 470 664 438 794 452C900 464 980 516 1052 612" stroke="url(#g)" stroke-width="10" stroke-linecap="round"/>
+  <text x="84" y="392" fill="#F4F7FB" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="700">Federação V2</text>
+  <text x="84" y="468" fill="#AAB6D3" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="400">Laravel CRUD · MySQL · polished back-office flow</text>
+</svg>
