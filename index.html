@@ -195,11 +195,23 @@
 			</div>
 		</section>
 
-		<section id="projects" class="section-space section-alt">
-			<div class="container-xxl px-4 px-lg-5">
+		<section id="projects" class="section-space section-alt projects-section">
+			<div class="projects-stage" aria-hidden="true">
+				<canvas id="projects-canvas"></canvas>
+				<div class="projects-stage-glow projects-stage-glow-a"></div>
+				<div class="projects-stage-glow projects-stage-glow-b"></div>
+			</div>
+			<div class="container-xxl px-4 px-lg-5 projects-layout">
 				<div class="section-heading reveal reveal-up">
 					<p class="eyebrow">Projetos</p>
 					<h2>Uma seleção de trabalhos com foco em funcionalidade, estrutura e apresentação.</h2>
+					<p class="projects-lead">Ao entrar nesta zona, a composição reage ao scroll com uma cena Three.js para dar mais presença visual aos projetos em destaque.</p>
+				</div>
+
+				<div class="projects-meta reveal reveal-fade">
+					<span>Scroll-driven motion</span>
+					<span>Three.js ambient scene</span>
+					<span>6 projetos selecionados</span>
 				</div>
 
 				<div class="row g-4 projects-grid">
@@ -388,15 +400,28 @@
 			</div>
 		</section>
 
-		<section id="contact" class="section-space section-alt">
+		<section id="contact" class="section-space section-alt contact-section">
 			<div class="container-xxl px-4 px-lg-5">
+				<div class="section-heading reveal reveal-up">
+					<p class="eyebrow">Contacto</p>
+					<h2>Se houver um produto, uma equipa ou uma ideia séria para acelerar, o próximo passo é falar.</h2>
+					<p class="contact-lead">Trabalho melhor em projetos onde backend, frontend e detalhe visual precisam de andar alinhados desde o início.</p>
+				</div>
 				<div class="contact-shell reveal reveal-up">
 					<div class="contact-copy">
-						<p class="eyebrow">Contactos</p>
-						<h2>Se tiveres um produto, uma equipa ou uma ideia séria, vamos falar.</h2>
+						<div class="contact-pill-row">
+							<span>Web apps</span>
+							<span>Back-office</span>
+							<span>Mobile + API</span>
+						</div>
 						<p>
-							Estou disponível para oportunidades, colaborações e projetos que valorizem clareza técnica e uma experiência final bem desenhada.
+							Estou disponível para oportunidades, colaborações e projetos que valorizem clareza técnica, estrutura sólida e uma experiência final bem desenhada.
 						</p>
+						<div class="contact-note">
+							<strong>Contacto principal</strong>
+							<a href="mailto:silvestrem754@gmail.com?subject=Contacto%20via%20Portfolio">silvestrem754@gmail.com</a>
+							<span>Resposta habitual em 24h úteis.</span>
+						</div>
 					</div>
 					<div class="contact-actions">
 						<a class="contact-link primary" href="mailto:silvestrem754@gmail.com?subject=Contacto%20via%20Portfolio">
@@ -410,6 +435,10 @@
 						<a class="contact-link secondary" href="https://github.com/Wand-DenaXy" target="_blank" rel="noopener noreferrer">
 							<i class="bi bi-github"></i>
 							<span>GitHub</span>
+						</a>
+						<a class="contact-link secondary" href="assets/ManuelSilvestreCurricloV2.pdf" download>
+							<i class="bi bi-file-earmark-arrow-down"></i>
+							<span>Download CV</span>
 						</a>
 					</div>
 				</div>
@@ -439,6 +468,6 @@
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="js/script.js"></script>
+	<script type="module" src="js/script.js"></script>
 </body>
 </html>
