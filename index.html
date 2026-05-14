@@ -1,473 +1,761 @@
-<!doctype html>
-<html lang="pt-PT">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Manuel Silvestre - portfolio moderno de developer com foco em web, backend e experiências digitais premium.">
-	<meta name="theme-color" content="#070b12">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Manuel Silvestre | Modern Developer Portfolio">
-	<meta property="og:description" content="Portfolio premium com projetos, skills, experiência e contacto.">
-	<meta property="og:image" content="assets/WeGreen.png">
-	<meta property="og:locale" content="pt_PT">
-	<title>Manuel Silvestre | Developer Portfolio</title>
-	<link rel="canonical" href="./index.html">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manuel Silvestre — Backend & Full Stack Developer. Building scalable systems and modern web experiences." />
+  <meta name="author" content="Manuel Silvestre" />
+  <meta property="og:title" content="Manuel Silvestre — Backend & Full Stack Developer" />
+  <meta property="og:description" content="Developer passionate about scalable systems, backend architecture, automation and modern web experiences." />
+  <meta name="theme-color" content="#050816" />
+  <title>Manuel Silvestre — Backend & Full Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-	<div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
 
-	<header class="site-header sticky-top">
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<div class="container-xxl px-4 px-lg-5">
-				<a class="navbar-brand brand-mark" href="#home">Manuel <span>Silvestre</span></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Abrir navegação">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="siteNav">
-					<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 gap-2">
-						<li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-						<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-						<li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
-						<li class="nav-item"><a class="nav-link" href="#timeline">Experiência</a></li>
-						<li class="nav-item"><a class="nav-link" href="#contact">Contactos</a></li>
-						<li class="nav-item ms-lg-3"><a class="btn btn-sm btn-accent nav-cta" href="assets/ManuelSilvestreCurricloV2.pdf" download>Download CV</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+  <!-- ═══════════════════════════════════════════
+       CUSTOM CURSOR
+  ═══════════════════════════════════════════ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-trailer" id="cursor-trailer" aria-hidden="true"></div>
 
-	<main>
-		<section id="home" class="hero section-space">
-			<div class="container-xxl px-4 px-lg-5">
-				<div class="hero-grid">
-					<div class="hero-copy reveal reveal-up">
-						<p class="eyebrow">Developer Portfolio / Premium UI / Vanilla HTML, CSS e JS</p>
-						<h1>Construo experiências digitais limpas, técnicas e memoráveis.</h1>
-						<p class="hero-text">
-							Sou Manuel Silvestre. Desenvolvo projetos web com foco em estrutura, clareza visual e execução profissional.
-							Trabalho com backend, interfaces responsivas e soluções orientadas a produto, procurando sempre equilíbrio entre engenharia e estética.
-						</p>
-						<div class="hero-actions">
-							<a class="btn btn-accent btn-lg" href="#projects">Ver projetos</a>
-							<a class="btn btn-outline-light btn-lg" href="assets/ManuelSilvestreCurricloV2.pdf" download>Download CV</a>
-						</div>
-						<div class="hero-metrics">
-							<div class="metric-card">
-								<strong>5+</strong>
-								<span>Projetos principais</span>
-							</div>
-							<div class="metric-card">
-								<strong>Stack</strong>
-								<span>PHP, Laravel, Flutter, JS</span>
-							</div>
-							<div class="metric-card">
-								<strong>Foco</strong>
-								<span>Backend, UX, performance</span>
-							</div>
-						</div>
-					</div>
+  <!-- ═══════════════════════════════════════════
+       SCROLL PROGRESS BAR
+  ═══════════════════════════════════════════ -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
-					<div class="hero-visual reveal reveal-fade">
-						<div class="portrait-frame" data-parallax="slow">
-							<img src="assets/hero-portrait.jpg" alt="Manuel Silvestre" width="900" height="1200" loading="eager" decoding="async">
-						</div>
-						<div class="floating-card floating-card-top" data-parallax="mid">
-							<span class="floating-label">Stack principal</span>
-							<p>Laravel / PHP / MySQL / JavaScript</p>
-						</div>
-						<div class="floating-card floating-card-bottom" data-parallax="fast">
-							<span class="floating-label">Disponível para</span>
-							<p>Interfaces, sistemas web, APIs e produtos digitais.</p>
-						</div>
-					</div>
-				</div>
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo" aria-label="Manuel Silvestre — Home">
+        <span class="logo-text">MS</span>
+        <span class="logo-pulse" aria-hidden="true"></span>
+      </a>
 
-				<div class="hero-badges reveal reveal-up">
-					<div class="badge-row">
-						<span>Arquitetura limpa</span>
-						<span>Motion subtil</span>
-						<span>Mobile-first</span>
-						<span>SEO-ready</span>
-					</div>
-				</div>
-			</div>
-		</section>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#about"     class="nav-link" data-section="about">About</a></li>
+          <li><a href="#tech"      class="nav-link" data-section="tech">Skills</a></li>
+          <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+          <li><a href="#projects"  class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#contact"   class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
 
-		<section id="about" class="section-space section-alt">
-			<div class="container-xxl px-4 px-lg-5">
-				<div class="section-heading reveal reveal-up">
-					<p class="eyebrow">Sobre mim</p>
-					<h2>Um perfil técnico com visão de produto e atenção ao detalhe.</h2>
-				</div>
-				<div class="row g-4 align-items-stretch">
-					<div class="col-lg-7 reveal reveal-up">
-						<div class="glass-card about-card h-100">
-							<p>
-								Sou técnico de Tecnologias de Informação e Programação, com experiência em desenvolvimento web e foco forte no backend.
-								Gosto de criar soluções bem estruturadas, onde a lógica, a organização do código e a experiência visual trabalham em conjunto.
-							</p>
-							<p>
-								Ao longo da minha formação e dos meus projetos pessoais, desenvolvi capacidade de análise, resolução de problemas e disciplina de implementação.
-								O objetivo é sempre o mesmo: entregar software claro, elegante e útil.
-							</p>
-							<div class="about-points">
-								<div class="about-point">
-									<span>01</span>
-									<p>Interfaces com hierarquia visual forte e foco em usabilidade.</p>
-								</div>
-								<div class="about-point">
-									<span>02</span>
-									<p>Backend organizado, escalável e orientado a manutenção.</p>
-								</div>
-								<div class="about-point">
-									<span>03</span>
-									<p>Movimento e microinterações usadas com intenção, não por excesso.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-5 reveal reveal-up">
-						<div class="stack-grid h-100">
-							<article class="stack-card">
-								<span class="stack-icon"><i class="bi bi-grid-1x2-fill"></i></span>
-								<h3>Design systems</h3>
-								<p>Estrutura visual consistente, espaçamento controlado e componentes reutilizáveis.</p>
-							</article>
-							<article class="stack-card">
-								<span class="stack-icon"><i class="bi bi-lightning-charge-fill"></i></span>
-								<h3>Performance</h3>
-								<p>Otimização de carga, animações leves e decisões pensadas para mobile.</p>
-							</article>
-							<article class="stack-card accent-card">
-								<span class="stack-icon"><i class="bi bi-gear-fill"></i></span>
-								<h3>Engenharia</h3>
-								<p>Planeamento, arquitetura e disciplina de execução como base do produto final.</p>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+      <a href="assets/ManuelSilvestreCurricloV2.pdf" download class="btn btn-sm btn-outline nav-cv">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </a>
 
-		<section id="skills" class="section-space">
-			<div class="container-xxl px-4 px-lg-5">
-				<div class="section-heading reveal reveal-up">
-					<p class="eyebrow">Skills</p>
-					<h2>Ferramentas e tecnologias que suportam o meu trabalho diário.</h2>
-				</div>
-				<div class="skills-layout reveal reveal-up">
-					<article class="skills-panel">
-						<div class="panel-label">Frontend & UI</div>
-						<div class="skill-tags">
-							<span>HTML5</span>
-							<span>CSS3</span>
-							<span>JavaScript</span>
-							<span>Bootstrap</span>
-						</div>
-					</article>
-					<article class="skills-panel">
-						<div class="panel-label">Backend & Dados</div>
-						<div class="skill-tags">
-							<span>PHP</span>
-							<span>Laravel</span>
-							<span>MySQL</span>
-							<span>REST APIs</span>
-						</div>
-					</article>
-					<article class="skills-panel">
-						<div class="panel-label">Mobile & Extras</div>
-						<div class="skill-tags">
-							<span>Flutter</span>
-							<span>Kotlin</span>
-							<span>Python</span>
-							<span>Java</span>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-mobile">
+        <span class="toggle-bar" aria-hidden="true"></span>
+        <span class="toggle-bar" aria-hidden="true"></span>
+        <span class="toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
 
-		<section id="projects" class="section-space section-alt projects-section">
-			<div class="projects-stage" aria-hidden="true">
-				<canvas id="projects-canvas"></canvas>
-				<div class="projects-stage-glow projects-stage-glow-a"></div>
-				<div class="projects-stage-glow projects-stage-glow-b"></div>
-			</div>
-			<div class="container-xxl px-4 px-lg-5 projects-layout">
-				<div class="section-heading reveal reveal-up">
-					<p class="eyebrow">Projetos</p>
-					<h2>Uma seleção de trabalhos com foco em funcionalidade, estrutura e apresentação.</h2>
-					<p class="projects-lead">Ao entrar nesta zona, a composição reage ao scroll com uma cena Three.js para dar mais presença visual aos projetos em destaque.</p>
-				</div>
+  <!-- Mobile Navigation Drawer -->
+  <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+    <ul class="mobile-links">
+      <li><a href="#about"     class="mobile-link">About</a></li>
+      <li><a href="#tech"      class="mobile-link">Skills</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
+      <li><a href="#projects"  class="mobile-link">Projects</a></li>
+      <li><a href="#contact"   class="mobile-link">Contact</a></li>
+      <li>
+        <a href="assets/ManuelSilvestreCurricloV2.pdf" download class="mobile-link mobile-link-cta">
+          Download CV
+        </a>
+      </li>
+    </ul>
+  </div>
 
-				<div class="projects-meta reveal reveal-fade">
-					<span>Scroll-driven motion</span>
-					<span>Three.js ambient scene</span>
-					<span>6 projetos selecionados</span>
-				</div>
+  <main>
 
-				<div class="row g-4 projects-grid">
-					<div class="col-md-6 col-xl-4 reveal reveal-up">
-						<article class="project-card">
-							<div class="project-media">
-								<img src="assets/WeGreen.png" alt="WeGreen" loading="lazy" decoding="async">
-							</div>
-							<div class="project-body">
-								<div class="project-topline">
-									<h3>WeGreen</h3>
-									<span>01</span>
-								</div>
-								<p>Plataforma e-commerce completa com três perfis de utilizador: vendedor, cliente e administrador.</p>
-								<div class="project-tags">
-									<span>JavaScript</span>
-									<span>PHP</span>
-									<span>MySQL</span>
-								</div>
-								<div class="project-links">
-									<a href="https://github.com/WeGreenProject/WeGreen-Main" target="_blank" rel="noopener noreferrer">GitHub</a>
-								</div>
-							</div>
-						</article>
-					</div>
+    <!-- ═══════════════════════════════════════════
+         01 — HERO
+    ═══════════════════════════════════════════ -->
+    <section id="hero" class="hero">
+      <!-- Three.js canvas lives in the background -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
 
-					<div class="col-md-6 col-xl-4 reveal reveal-up">
-						<article class="project-card">
-							<div class="project-media">
-								<img src="assets/PuroEncanto.png" alt="Puro Encanto" loading="lazy" decoding="async">
-							</div>
-							<div class="project-body">
-								<div class="project-topline">
-									<h3>Puro Encanto</h3>
-									<span>02</span>
-								</div>
-								<p>Plataforma de festas para reservas de clientes e gestão operacional por administradores.</p>
-								<div class="project-tags">
-									<span>JavaScript</span>
-									<span>PHP</span>
-									<span>Booking flow</span>
-								</div>
-								<div class="project-links">
-									<a href="https://github.com/PuroEncantoo/PuroEncanto_Temp-Main" target="_blank" rel="noopener noreferrer">GitHub</a>
-								</div>
-							</div>
-						</article>
-					</div>
+      <!-- Mouse-follow glow blob -->
+      <div class="mouse-glow" id="mouse-glow" aria-hidden="true"></div>
 
-					<div class="col-md-6 col-xl-4 reveal reveal-up">
-						<article class="project-card">
-							<div class="project-media project-media-gradient">
-								<img src="assets/federacao-card.svg" alt="Federação" loading="lazy" decoding="async">
-							</div>
-							<div class="project-body">
-								<div class="project-topline">
-									<h3>Federação</h3>
-									<span>03</span>
-								</div>
-								<p>Projeto com ControllerBase para normalizar controladores, centralizar CRUD e reutilizar código.</p>
-								<div class="project-tags">
-									<span>HTML</span>
-									<span>CSS</span>
-									<span>JavaScript</span>
-									<span>PHP</span>
-									<span>MySQL</span>
-								</div>
-								<div class="project-links">
-									<a href="https://github.com/Wand-DenaXy/Federacao" target="_blank" rel="noopener noreferrer">GitHub</a>
-								</div>
-							</div>
-						</article>
-					</div>
+      <div class="hero-inner container">
 
-					<div class="col-md-6 col-xl-4 reveal reveal-up">
-						<article class="project-card">
-							<div class="project-media project-media-gradient">
-								<img src="assets/federacao-v2-card.svg" alt="Federação V2" loading="lazy" decoding="async">
-							</div>
-							<div class="project-body">
-								<div class="project-topline">
-									<h3>Federação V2</h3>
-									<span>04</span>
-								</div>
-								<p>CRUD em Laravel com MySQL, com base sólida para evolução de back-office e gestão de dados.</p>
-								<div class="project-tags">
-									<span>Laravel</span>
-									<span>MySQL</span>
-									<span>Backend</span>
-								</div>
-								<div class="project-links">
-									<a href="https://github.com/Wand-DenaXy/FederacaoV2" target="_blank" rel="noopener noreferrer">GitHub</a>
-								</div>
-							</div>
-						</article>
-					</div>
+        <!-- ── Text Side ── -->
+        <div class="hero-content">
+          <div class="hero-available reveal" style="--delay:0ms">
+            <span class="avail-dot" aria-hidden="true"></span>
+            <span>Available for opportunities</span>
+          </div>
 
-					<div class="col-md-6 col-xl-4 reveal reveal-up">
-						<article class="project-card">
-							<div class="project-media">
-								<img src="assets/flutter-logo.png" alt="Flutter" loading="lazy" decoding="async">
-							</div>
-							<div class="project-body">
-								<div class="project-topline">
-									<h3>Flutter</h3>
-									<span>05</span>
-								</div>
-								<p>Aplicação mobile cross-platform integrada com uma REST API robusta e foco em estrutura funcional.</p>
-								<div class="project-tags">
-									<span>Flutter</span>
-									<span>API REST</span>
-								</div>
-								<div class="project-links">
-									<a href="https://github.com/Wand-DenaXy/App_apiv2" target="_blank" rel="noopener noreferrer">GitHub</a>
-								</div>
-							</div>
-						</article>
-					</div>
+          <h1 class="hero-title">
+            <span class="hero-line reveal" style="--delay:80ms">Manuel</span>
+            <span class="hero-line hero-line-glow reveal" style="--delay:160ms">Silvestre</span>
+          </h1>
 
-					<div class="col-md-6 col-xl-4 reveal reveal-up">
-						<article class="project-card project-card-featured">
-							<div class="project-media project-media-gradient">
-								<img src="assets/soon-card.svg" alt="Projeto em breve" loading="lazy" decoding="async">
-							</div>
-							<div class="project-body">
-								<div class="project-topline">
-									<h3>Em Breve</h3>
-									<span>06</span>
-								</div>
-								<p>Nova iteração a caminho, com API REST, Flutter e FastAPI para expandir o ecossistema de produtos.</p>
-								<div class="project-tags">
-									<span>API REST</span>
-									<span>Flutter</span>
-									<span>FastAPI</span>
-								</div>
-								<div class="project-links">
-									<a href="https://github.com/Wand-DenaXy" target="_blank" rel="noopener noreferrer">GitHub</a>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
-		</section>
+          <div class="hero-role reveal" style="--delay:280ms">
+            <span id="typed-text" class="typed-text" aria-live="polite"></span>
+            <span class="typed-cursor" aria-hidden="true">|</span>
+          </div>
 
-		<section id="timeline" class="section-space">
-			<div class="container-xxl px-4 px-lg-5">
-				<div class="section-heading reveal reveal-up">
-					<p class="eyebrow">Experiência</p>
-					<h2>Formação prática e contexto de trabalho que moldaram a minha abordagem.</h2>
-				</div>
-				<div class="timeline reveal reveal-up">
-					<article class="timeline-item">
-						<div class="timeline-dot"></div>
-						<div class="timeline-card">
-							<span class="timeline-year">2024</span>
-							<h3>Gabriel Pereira</h3>
-							<p>Conclusão do ensino secundário em Programação e Gestão de Sistemas Informáticos.</p>
-						</div>
-					</article>
-					<article class="timeline-item">
-						<div class="timeline-dot"></div>
-						<div class="timeline-card">
-							<span class="timeline-year">210h</span>
-							<h3>Cyango</h3>
-							<p>Estágio numa empresa focada em realidade aumentada, com contacto direto com ambiente de produto e execução real.</p>
-						</div>
-					</article>
-					<article class="timeline-item">
-						<div class="timeline-dot"></div>
-						<div class="timeline-card">
-							<span class="timeline-year">320h</span>
-							<h3>El Chester</h3>
-							<p>Estágio numa empresa de design gráfico, reforçando sensibilidade visual e trabalho com aplicações Adobe.</p>
-						</div>
-					</article>
-					<article class="timeline-item">
-						<div class="timeline-dot"></div>
-						<div class="timeline-card">
-							<span class="timeline-year">Atual</span>
-							<h3>Construção contínua</h3>
-							<p>Foco em evoluir como developer full-stack com atenção à engenharia de software, UI moderna e qualidade de entrega.</p>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
+          <p class="hero-desc reveal" style="--delay:380ms">
+            Developer passionate about scalable systems, backend architecture,<br class="br-desktop" />
+            automation and modern web experiences.
+          </p>
 
-		<section id="contact" class="section-space section-alt contact-section">
-			<div class="container-xxl px-4 px-lg-5">
-				<div class="section-heading reveal reveal-up">
-					<p class="eyebrow">Contacto</p>
-					<h2>Se houver um produto, uma equipa ou uma ideia séria para acelerar, o próximo passo é falar.</h2>
-					<p class="contact-lead">Trabalho melhor em projetos onde backend, frontend e detalhe visual precisam de andar alinhados desde o início.</p>
-				</div>
-				<div class="contact-shell reveal reveal-up">
-					<div class="contact-copy">
-						<div class="contact-pill-row">
-							<span>Web apps</span>
-							<span>Back-office</span>
-							<span>Mobile + API</span>
-						</div>
-						<p>
-							Estou disponível para oportunidades, colaborações e projetos que valorizem clareza técnica, estrutura sólida e uma experiência final bem desenhada.
-						</p>
-						<div class="contact-note">
-							<strong>Contacto principal</strong>
-							<a href="mailto:silvestrem754@gmail.com?subject=Contacto%20via%20Portfolio">silvestrem754@gmail.com</a>
-							<span>Resposta habitual em 24h úteis.</span>
-						</div>
-					</div>
-					<div class="contact-actions">
-						<a class="contact-link primary" href="mailto:silvestrem754@gmail.com?subject=Contacto%20via%20Portfolio">
-							<i class="bi bi-envelope-paper"></i>
-							<span>Email direto</span>
-						</a>
-						<button class="contact-link secondary" id="copy-email" type="button" data-email="silvestrem754@gmail.com">
-							<i class="bi bi-clipboard2"></i>
-							<span>Copiar email</span>
-						</button>
-						<a class="contact-link secondary" href="https://github.com/Wand-DenaXy" target="_blank" rel="noopener noreferrer">
-							<i class="bi bi-github"></i>
-							<span>GitHub</span>
-						</a>
-						<a class="contact-link secondary" href="assets/ManuelSilvestreCurricloV2.pdf" download>
-							<i class="bi bi-file-earmark-arrow-down"></i>
-							<span>Download CV</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
+          <div class="hero-cta reveal" style="--delay:480ms">
+            <a href="#projects" class="btn btn-primary btn-glow">
+              View My Work
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+          </div>
 
-	<footer class="site-footer">
-		<div class="container-xxl px-4 px-lg-5">
-			<div class="footer-grid">
-				<div>
-					<a class="footer-brand" href="#home">Manuel <span>Silvestre</span></a>
-					<p>Developer portfolio com linguagem limpa, execução sólida e foco em soluções profissionais.</p>
-				</div>
-				<div class="footer-links">
-					<a href="#about">Sobre</a>
-					<a href="#skills">Skills</a>
-					<a href="#projects">Projetos</a>
-					<a href="#contact">Contactos</a>
-				</div>
-				<div class="footer-meta">
-					<span>Disponível para oportunidades e colaborações.</span>
-					<span>© <span id="current-year"></span> Manuel Silvestre</span>
-				</div>
-			</div>
-		</div>
-	</footer>
+          <div class="hero-socials reveal" style="--delay:560ms">
+            <a href="https://github.com/Wand-DenaXy" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/manuel-silvestre-38394b351/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:manuelsilvestre@email.com" class="social-btn" aria-label="Send Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-	<script type="module" src="js/script.js"></script>
+        <!-- ── Portrait Side ── -->
+        <div class="hero-visual">
+          <div class="portrait-wrap reveal" style="--delay:200ms">
+            <!-- Orbital rings -->
+            <div class="ring ring-1" aria-hidden="true"></div>
+            <div class="ring ring-2" aria-hidden="true"></div>
+            <div class="ring ring-3" aria-hidden="true"></div>
+
+            <!-- Photo frame -->
+            <div class="portrait-frame">
+              <img src="assets/hero-portrait.jpg" alt="Manuel Silvestre" class="portrait-img" />
+              <div class="portrait-shine" aria-hidden="true"></div>
+            </div>
+
+            <!-- Floating info chips -->
+            <div class="chip chip-1 reveal" style="--delay:700ms" aria-hidden="true">
+              <span class="chip-icon">⚡</span>
+              <div>
+                <div class="chip-title">Backend Expert</div>
+                <div class="chip-sub">Scalable Systems</div>
+              </div>
+            </div>
+            <div class="chip chip-2 reveal" style="--delay:820ms" aria-hidden="true">
+              <span class="chip-icon">🚀</span>
+              <div>
+                <div class="chip-title">Full Stack</div>
+                <div class="chip-sub">End-to-End Dev</div>
+              </div>
+            </div>
+            <div class="chip chip-3 reveal" style="--delay:940ms" aria-hidden="true">
+              <span class="chip-icon">🔧</span>
+              <div>
+                <div class="chip-title">14+ Technologies</div>
+                <div class="chip-sub">Always Learning</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-label="Scroll down to explore">
+        <div class="scroll-track"><div class="scroll-thumb"></div></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         02 — ABOUT
+    ═══════════════════════════════════════════ -->
+    <section id="about" class="section about">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-label reveal">// 01. About Me</p>
+          <h2 class="section-title reveal">The Story <span class="grad-text">Behind The Code</span></h2>
+        </header>
+
+        <div class="about-grid">
+
+          <div class="about-text">
+            <p class="reveal">
+              I'm a passionate backend and full stack developer who finds beauty in the logic that powers great software.
+              From designing resilient APIs to managing complex database architectures, I love making systems that actually
+              <em>work</em> at scale.
+            </p>
+            <p class="reveal">
+              My journey started with curiosity — breaking things to understand how they worked. That curiosity evolved
+              into a drive for clean architecture, system design, and building real-world products that solve actual problems.
+            </p>
+            <p class="reveal">
+              I'm particularly drawn to backend engineering, automation, and the intersection of software with business logic.
+              Whether it's building payment systems, managing multi-tenant SaaS platforms, or designing data pipelines —
+              I turn complex requirements into elegant solutions.
+            </p>
+
+            <div class="about-highlights">
+              <div class="hl-item reveal">
+                <div class="hl-icon" aria-hidden="true">🏗️</div>
+                <div>
+                  <strong>System Architecture</strong>
+                  <span>Scalable, maintainable design patterns</span>
+                </div>
+              </div>
+              <div class="hl-item reveal">
+                <div class="hl-icon" aria-hidden="true">⚙️</div>
+                <div>
+                  <strong>Backend Focus</strong>
+                  <span>APIs, databases, automation pipelines</span>
+                </div>
+              </div>
+              <div class="hl-item reveal">
+                <div class="hl-icon" aria-hidden="true">📚</div>
+                <div>
+                  <strong>Continuous Learning</strong>
+                  <span>Always exploring the next layer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-card reveal" style="--delay:0ms">
+              <div class="stat-val" data-count="3" data-suffix="+">0</div>
+              <div class="stat-lbl">Years Coding</div>
+              <div class="stat-bar" aria-hidden="true"></div>
+            </div>
+            <div class="stat-card reveal" style="--delay:100ms">
+              <div class="stat-val" data-count="4" data-suffix="+">0</div>
+              <div class="stat-lbl">Projects Built</div>
+              <div class="stat-bar" aria-hidden="true"></div>
+            </div>
+            <div class="stat-card reveal" style="--delay:200ms">
+              <div class="stat-val" data-count="14" data-suffix="+">0</div>
+              <div class="stat-lbl">Technologies</div>
+              <div class="stat-bar" aria-hidden="true"></div>
+            </div>
+            <div class="stat-card reveal" style="--delay:300ms">
+              <div class="stat-val" data-count="2" data-suffix="">0</div>
+              <div class="stat-lbl">Certifications</div>
+              <div class="stat-bar" aria-hidden="true"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         03 — TECHNOLOGIES
+    ═══════════════════════════════════════════ -->
+    <section id="tech" class="section tech">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-label reveal">// 02. Technologies</p>
+          <h2 class="section-title reveal">My <span class="grad-text">Tech Arsenal</span></h2>
+          <p class="section-sub reveal">The stack I use to architect and ship production software.</p>
+        </header>
+
+        <!-- Languages -->
+        <div class="tech-cat reveal">
+          <h3 class="cat-label">
+            <span class="cat-line" aria-hidden="true"></span>
+            Languages
+            <span class="cat-line" aria-hidden="true"></span>
+          </h3>
+          <div class="tech-grid">
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy" />
+                <span>JavaScript</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy" />
+                <span>TypeScript</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" loading="lazy" />
+                <span>Python</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" loading="lazy" />
+                <span>PHP</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="tech-cat reveal">
+          <h3 class="cat-label">
+            <span class="cat-line" aria-hidden="true"></span>
+            Frameworks &amp; Libraries
+            <span class="cat-line" aria-hidden="true"></span>
+          </h3>
+          <div class="tech-grid">
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" loading="lazy" />
+                <span>React</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI" loading="lazy" />
+                <span>FastAPI</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy" />
+                <span>Node.js</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <div class="tc-custom-icon threejs-icon" aria-hidden="true">3JS</div>
+                <span>Three.js</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases & Infrastructure -->
+        <div class="tech-cat reveal">
+          <h3 class="cat-label">
+            <span class="cat-line" aria-hidden="true"></span>
+            Databases &amp; Infrastructure
+            <span class="cat-line" aria-hidden="true"></span>
+          </h3>
+          <div class="tech-grid">
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy" />
+                <span>PostgreSQL</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy" />
+                <span>MySQL</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" loading="lazy" />
+                <span>Docker</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="Redis" loading="lazy" />
+                <span>Redis</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="Prisma" loading="lazy" />
+                <span>Prisma</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+            <div class="tech-card">
+              <div class="tc-inner">
+                <div class="tc-custom-icon stripe-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="#6772e5" aria-hidden="true"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.591-7.305z"/></svg>
+                </div>
+                <span>Stripe</span>
+              </div>
+              <div class="tc-glow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         04 — EDUCATION
+    ═══════════════════════════════════════════ -->
+    <section id="education" class="section education">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-label reveal">// 03. Education</p>
+          <h2 class="section-title reveal">Academic <span class="grad-text">Journey</span></h2>
+        </header>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline-track" aria-hidden="true">
+            <div class="timeline-progress" id="timeline-progress"></div>
+          </div>
+
+          <!-- IEFP -->
+          <div class="tl-item tl-left reveal">
+            <div class="tl-dot" aria-hidden="true"><span></span></div>
+            <article class="tl-card">
+              <div class="tl-card-header">
+                <div class="tl-date">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  dez de 2024 – jun de 2025
+                </div>
+                <span class="tl-badge tl-badge-active">In Progress</span>
+              </div>
+              <h3 class="tl-school">IEFP</h3>
+              <p class="tl-school-full">Instituto do Emprego e Formação Profissional</p>
+              <h4 class="tl-degree">Técnico Especialista em Tecnologias e Programação de Sistemas de Informação</h4>
+              <div class="tl-tags">
+                <span class="tl-tag">JavaScript</span>
+                <span class="tl-tag">Bibliotecas JavaScript</span>
+                <span class="tl-tag">+12 competências</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Gabriel Pereira -->
+          <div class="tl-item tl-right reveal">
+            <div class="tl-dot" aria-hidden="true"><span></span></div>
+            <article class="tl-card">
+              <div class="tl-card-header">
+                <div class="tl-date">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  set de 2021 – jun de 2024
+                </div>
+                <span class="tl-badge tl-badge-done">Completed</span>
+              </div>
+              <h3 class="tl-school">Escola Secundária Gabriel Pereira</h3>
+              <h4 class="tl-degree">Técnico de Gestão e Programação de Sistemas Informáticos</h4>
+              <div class="tl-grade">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Nível de formação: <strong>16 Valores</strong> (de 0 a 20)
+              </div>
+              <div class="tl-tags">
+                <span class="tl-tag">Programming</span>
+                <span class="tl-tag">Systems Management</span>
+                <span class="tl-tag">Web Development</span>
+                <span class="tl-tag">Databases</span>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         05 — PROJECTS
+    ═══════════════════════════════════════════ -->
+    <section id="projects" class="section projects">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-label reveal">// 04. Projects</p>
+          <h2 class="section-title reveal">Featured <span class="grad-text">Work</span></h2>
+          <p class="section-sub reveal">A selection of projects showcasing backend depth and full-stack range.</p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Project 01 -->
+          <article class="proj-card reveal" data-project="1">
+            <div class="proj-glow-border" aria-hidden="true"></div>
+            <div class="proj-inner">
+              <div class="proj-num" aria-hidden="true">01</div>
+              <div class="proj-head">
+                <h3 class="proj-title">Manueli's Clubes</h3>
+                <a href="https://github.com/Wand-DenaXy/-Manueli-s-Clubes" target="_blank" rel="noopener noreferrer" class="proj-gh-btn" aria-label="View Manueli's Clubes on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+              <p class="proj-desc">
+                Full-stack SaaS for club management with Stripe payments, RBAC, event systems,
+                email notifications and multi-tenant architecture.
+              </p>
+              <div class="proj-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Stripe</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">RBAC</span>
+                <span class="tag">Multi-tenant</span>
+              </div>
+              <a href="https://github.com/Wand-DenaXy/-Manueli-s-Clubes" target="_blank" rel="noopener noreferrer" class="proj-link">
+                View Repository
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="proj-card proj-card-featured reveal" data-project="2">
+            <div class="proj-glow-border" aria-hidden="true"></div>
+            <div class="proj-inner">
+              <div class="proj-num" aria-hidden="true">02</div>
+              <div class="proj-head">
+                <h3 class="proj-title">WeGreen</h3>
+                <a href="https://github.com/WeGreenProject/WeGreen-Main" target="_blank" rel="noopener noreferrer" class="proj-gh-btn" aria-label="View WeGreen on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+              <p class="proj-desc">
+                Marketplace platform with Stripe payments, refunds, email systems,
+                interactive maps and MVC architecture.
+              </p>
+              <div class="proj-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">Stripe</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">MVC</span>
+                <span class="tag">Maps API</span>
+              </div>
+              <a href="https://github.com/WeGreenProject/WeGreen-Main" target="_blank" rel="noopener noreferrer" class="proj-link">
+                View Repository
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="proj-card reveal" data-project="3">
+            <div class="proj-glow-border" aria-hidden="true"></div>
+            <div class="proj-inner">
+              <div class="proj-num" aria-hidden="true">03</div>
+              <div class="proj-head">
+                <h3 class="proj-title">FederacaoV2</h3>
+                <a href="https://github.com/Wand-DenaXy/FederacaoV2" target="_blank" rel="noopener noreferrer" class="proj-gh-btn" aria-label="View FederacaoV2 on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+              <p class="proj-desc">
+                Modernized federation management platform focused on scalability
+                and organizational systems.
+              </p>
+              <div class="proj-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+                <span class="tag">REST API</span>
+              </div>
+              <a href="https://github.com/Wand-DenaXy/FederacaoV2" target="_blank" rel="noopener noreferrer" class="proj-link">
+                View Repository
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="proj-card reveal" data-project="4">
+            <div class="proj-glow-border" aria-hidden="true"></div>
+            <div class="proj-inner">
+              <div class="proj-num" aria-hidden="true">04</div>
+              <div class="proj-head">
+                <h3 class="proj-title">Federacao</h3>
+                <a href="https://github.com/Wand-DenaXy/Federacao" target="_blank" rel="noopener noreferrer" class="proj-gh-btn" aria-label="View Federacao on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+              <p class="proj-desc">
+                Federation management system developed to handle operational
+                workflows and organization management.
+              </p>
+              <div class="proj-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">MVC</span>
+                <span class="tag">OOP</span>
+              </div>
+              <a href="https://github.com/Wand-DenaXy/Federacao" target="_blank" rel="noopener noreferrer" class="proj-link">
+                View Repository
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects-more reveal">
+          <a href="https://github.com/Wand-DenaXy" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            View All on GitHub
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         06 — CONTACT
+    ═══════════════════════════════════════════ -->
+    <section id="contact" class="section contact">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-label reveal">// 05. Contact</p>
+          <h2 class="section-title reveal">Let's <span class="grad-text">Connect</span></h2>
+          <p class="section-sub reveal">Have a project in mind or an opportunity to share? I'd love to hear from you.</p>
+        </header>
+
+        <div class="contact-grid">
+
+          <!-- Form -->
+          <div class="contact-form-wrap reveal">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-name">Name</label>
+                  <input type="text" id="c-name" name="name" placeholder="Your name" required autocomplete="name" />
+                  <span class="form-err" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="c-email">Email</label>
+                  <input type="email" id="c-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                  <span class="form-err" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="c-subject">Subject</label>
+                <input type="text" id="c-subject" name="subject" placeholder="Project proposal / Opportunity" required />
+                <span class="form-err" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="c-message">Message</label>
+                <textarea id="c-message" name="message" placeholder="Tell me about your project or opportunity…" rows="5" required></textarea>
+                <span class="form-err" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+                <span class="btn-label">Send Message</span>
+                <span class="btn-loader" aria-hidden="true">
+                  <svg class="spin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+                </span>
+              </button>
+              <div class="form-success" id="form-success" role="alert">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Message sent! I'll get back to you very soon.
+              </div>
+            </form>
+          </div>
+
+          <!-- Info Panel -->
+          <div class="contact-info reveal">
+            <div class="ci-intro">
+              <h3>Reach out directly</h3>
+              <p>I'm open to new projects, creative ideas, and opportunities to collaborate on something meaningful.</p>
+            </div>
+            <div class="ci-links">
+              <a href="mailto:manuelsilvestre@email.com" class="ci-link">
+                <div class="ci-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="ci-text">
+                  <span class="ci-lbl">Email</span>
+                  <span class="ci-val">manuelsilvestre@email.com</span>
+                </div>
+                <span class="ci-arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="https://github.com/Wand-DenaXy" target="_blank" rel="noopener noreferrer" class="ci-link">
+                <div class="ci-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div class="ci-text">
+                  <span class="ci-lbl">GitHub</span>
+                  <span class="ci-val">github.com/Wand-DenaXy</span>
+                </div>
+                <span class="ci-arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="https://www.linkedin.com/in/manuel-silvestre-38394b351/" target="_blank" rel="noopener noreferrer" class="ci-link">
+                <div class="ci-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
+                <div class="ci-text">
+                  <span class="ci-lbl">LinkedIn</span>
+                  <span class="ci-val">linkedin.com/in/manuel-silvestre</span>
+                </div>
+                <span class="ci-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo" aria-hidden="true">MS</span>
+        <p class="footer-copy">© 2026 Manuel Silvestre. Designed &amp; built with passion.</p>
+        <div class="footer-links">
+          <a href="https://github.com/Wand-DenaXy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/manuel-silvestre-38394b351/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       THREE.JS + SCRIPT
+       Import map loads Three.js as an ES module
+  ═══════════════════════════════════════════ -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+  <script type="module" src="js/script.js"></script>
+
 </body>
 </html>
